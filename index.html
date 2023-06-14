@@ -2,242 +2,247 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Portifolio" />
     <meta name="keywords" content="henrique bissoli" />
     <meta name="author" content="Henrique Bissoli Malaman Alonso" />
-    <link href="styles/style.css" rel="stylesheet" />
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/date.js"></script>
+    <!-- PhosphorIcons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="scripts/bootstrap/bootstrap.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Fonts -->
+    <link href=’https://fonts.googleapis.com/css?family=Montserrat rel=’stylesheet’/>
   </head>
-  <body>
-    <div id="page-wrapper">
-      <!-- Header -->
-      <div id="header">
-        <div class="inner name">
-          <a class="name">Henrique Bissoli Malaman Alonso</a>
-        </div>
+  <body class="d-flex flex-column h-100 w-100" style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.2em">
+    <header class="d-flex w-100 px-3 justify-content-between align-items-center shadow-sm" style="top: 0; height: 100px; background-color: #fafafa">
+      <div class="d-flex w-75">
+        <p class="fs-4 fw-lighter text-uppercase">Henrique Bissoli Malaman Alonso</p>
       </div>
-      <!-- Essentials Illustration -->
-      <!--<div id="illustration">
-        <center>
-          <img src="resource/" />
-        </center>
-      </div>>-->
-      <!-- About Me -->
-      <div id="about">
-        <div class="inner">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <p
-            class="typewriting"
-            style="
-              white-space: nowrap;
-              overflow: hidden;
-              animation: typewriter 1.8s steps(41);
-              border-right: 10px solid black;
-              text-align: left;
-              color: #fafafa;
-              font-size: 13px;
-              text-transform: uppercase;
-              border-left: 0px;
-              width: 302px;
-              max-width: 302px;
-              margin: 0 auto;
-              color: black;
-            "
-          >
-            Hello, world! I'm a full-stack developer.
-          </p>
-          <!-- API Response -->
-          <br />
-          <div id="code">
-            <div id="console">
-              <p style="color: #e7de79">
-                code: <span class="last-word">200</span>,
-              </p>
-              <pstyle="color: #e7de79">message: <span class="last-word">success</span>,</p>
-              <p>{</p>
-              <pstyle="color: #e7de79">
-                &nbsp&nbsp&nbsp&nbsp"origin":
-                <span type="text" style="color: white">"São João da Boa Vista, SP",</span>
-              </p>
-              <p style="color: #e7de79">
-                &nbsp&nbsp&nbsp&nbsp"education":
-                <span type="text" style="color: white"
-                  >"Instituto Federal de Educação, Ciência e Tecnologia de São
-                  Paulo",</span
-                >
-              </p>
-              <p style="color: #e7de79">
-                &nbsp&nbsp&nbsp&nbsp"major":
-                <span type="text" style="color: white">"Computer Science",</span>
-              </p>
-              <p style="color: #e7de79">
-                &nbsp&nbsp&nbsp&nbsp"expectedGraduation":
-                <span type="text" style="color: white">"December 2026",</span>
-              </p>
-              <p style="color: #e7de79">
-                &nbsp&nbsp&nbsp&nbsp"interests":
-                <span type="text" style="color: white">
-                  <br />&nbsp&nbsp&nbsp&nbsp[
-                  <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{"Coffee"},
-                  <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{"Code"},
-                  <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{"Music"},
-                  <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{"Gaming"}
-                  <br />&nbsp&nbsp&nbsp&nbsp],</span
-                >
-              </p>
-              <p style="color: #e7de79">
-                &nbsp&nbsp&nbsp&nbsp"workExperience":
-                <span type="text" style="color: white">
-                  [
-                  <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{
-                  <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"Company":
-                  "Fortress Serviços Terceirizados LTDA.",
-                  <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"role":
-                  "Technician in maintenance of computer equipment",
-                  <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"startDate":
-                  "November 2021",
-                  <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"endDate":
-                  "February 2022" <br />
-                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}
-                  <br />&nbsp&nbsp&nbsp&nbsp],</span
-                >
-              </p>
-              <p style="color: #e7de79">
-                &nbsp&nbsp&nbsp&nbsp"resume":
-                <a target="_blank" href="resource/henriquebissoli.pdf"
-                  >henriquebissoli.pdf</a
-                >,
-              </p>
-              <p style="color: #e7de79">
-                &nbsp&nbsp&nbsp&nbsp"thoughts":
-                <span type="text" style="color: white"
-                  >[
-
-                  <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{"LinkedIn:
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/in/henrique-bissoli-142a49211/"
-                    >Henrique Bissoli</a
-                  >"}, <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{"Instagram:
-                  <a
-                    target="_blank"
-                    href="https://www.instagram.com/henriquebissoli11/"
-                    >@henriquebissoli11</a
-                  >"} <br />&nbsp&nbsp&nbsp&nbsp],</span
-                >
-              </p>
-              <p style="color: #e7de79">
-                &nbsp&nbsp&nbsp&nbsp"email":
-                <a
-                  target="_blank"
-                  href="mailto:contato.henrique.bissoli@gmail.com"
-                  >contato.henrique.bissoli@gmail.com</a
-                >,
-              </p>
-              <p>
-                }
-                <br />
-                <br />
-              </p>
+      <div class="d-flex w-25 justify-content-end">
+        <ul class="nav nav-underline text-uppercase">
+          <li class="nav-item">
+            <p class="fs-6">
+              <a class="nav-link active" aria-current="page" href="index.html">Meus Projetos</a>
+            </p>
+          </li>
+          <li class="nav-item">
+            <p class="fs-6">
+              <a class="nav-link" href="views/curriculum.html">Currículo</a>
+            </p>
+          </li>
+          <li class="nav-item">
+            <p class="fs-6">
+              <a class="nav-link" href="views/contact.html">Contato</a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <content class="d-flex justify-content-center w-100 h-100 pb-2">
+      <article class="d-flex flex-column w-50 pt-3">
+        <p class="fs-4 fw-lighter text-center text-uppercase">Projetos</p>
+        <div class="d-flex flex-row w-100" style="height: 300px">
+          <div style="height: 200px; width: 200px" class="mt-1 ms-2">
+            <img
+              class="rounded"
+              src="https://github.com/henrique-1/Palavreando/blob/main/lib/assets/icons/palavreando_logo.png?raw=true"
+              alt="Ícone do jogo"
+              style="height: 200px" />
+          </div>
+          <div class="d-flex flex-column h-100 w-75 ms-2 ps-1 overflow-auto">
+            <p class="fs-3 fw-medium text-uppercase">
+              <a target="_blank" href="https://github.com/henrique-1/Palavreando/tree/main" class="link-underline link-underline-opacity-0" style="color: black">Palavreando</a>
+            </p>
+            <p class="text-uppercase">
+              Sobre o aplicativo:
+              <span class="text-lowercase" style="font-size: 16px; letter-spacing: 0">
+                Palavreando é um aplicativo lúdico e divertido em que a criança deve acertar qual é a palavra proposta tendo como dica o número de letras e o tema ligado à palavra.
+              </span>
+            </p>
+            <div class="d-flex flex-column">
+              <p class="text-uppercase">Linguagens/Frameworks utilizadas:</p>
+              <div class="d-flex flex-row">
+                <span class="skill">Flutter</span>
+                <span class="skill">Dart</span>
+                <span class="skill">Git</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Resume -->
-      <div id="resume">
-        <div class="inner">
-          <p class="tagline" style="font-size: 15px">Resume</p>
-          <!-- Resume: Education-->
-          <p class="section-tagline" style="text-align: left; font-size: 13px">
-            Education
-          </p>
-          <p>
-            <a target="_blank" href="http://sbv.ifsp.edu.br"
-              ><img
-                class="icon"
-                src="https://portais.ifsp.edu.br/images/Logo_Campus/Marca_IFSP_2015-03.jpg" /></a
-            ><b
-              >Instituto Federal de Educação, Ciência e Tecnologia de São
-              Paulo</b
-            >
-            <span class="right"><i>2021 - 2026</i></span
-            ><br /><b>Computer Science, B.S.</b>
-            <span class="right"><i>São João da Boa Vista, SP</i></span
-            ><br /><br />
-            Relevant Coursework:<br />
-          </p>
-          <ul style="list-style: circle">
-            <li>Fundamentals of Computer Programming</li>
-            <li>Object-Oriented Programming</li>
-            <li>Principles of Software Development</li>
-            <li>Discrete Methods in Computer Science</li>
-            <li>Design and Analysis of Algorithms</li>
-            <li>Design for User Experience</li>
-            <li>Basic Organization of Computer Systems</li>
-            <li>Human Language and Technology</li>
-            <li>Mobile Application Development</li>
-            <li>Design and Construction of Large Software Systems</li>
-            <li>Operating Systems</li>
-            <li>File and Database Management</li>
-            <li>Advanced Web Technologies</li>
-            <li>Advanced Topics in Mobile App Development</li>
-          </ul>
-          <span class="skill">C/C++</span>
-          <span class="skill">Java</span>
-          <span class="skill">C#</span>
-          <span class="skill">.Net</span>
-          <span class="skill">MySQL</span>
-          <span class="skill">Git</span>
-          <br />
-          <br />
-          <!-- Résumé : Work Experience -->
-          <p class="section-tagline" style="text-align: left; font-size: 13px">
-            Work Experience
-          </p>
-          <p>
-            <a target="_blank" href="http://www.grupofortress.com.br"
-              ><img
-                class="icon"
-                src="https://grupofortress.com.br/wp-content/uploads/2021/06/cropped-Logo_Icon_Size-192x192.png" /></a
-            ><b>Fortress Serviços Terceirizados LTDA.</b>
-            <span class="right"><i>Nov 2021 - Feb 2022</i></span
-            ><br />
-            <b>Technician in maintenance of computer equipment</b>
-            <span class="right"><i>São João da Boa Vista, SP</i></span
-            ><br /><br />
-            I joined to found a development team that would go on to develop
-            several applications for the company. Worked on the development of
-            the "Fortress Anjo da Guarda" application and also worked in the
-            maintenance area of the company's current infrastructure
-            <br /><br />
-            <span class="skill">Node.JS</span>
-            <span class="skill">APIRest</span>
-            <span class="skill">TypeScript</span>
-            <span class="skill">MySQL</span>
-            <span class="skill">Git</span>
-          </p>
-          <br /><br />
+        <div class="d-flex flex-column w-100 h-auto">
+          <p class="ps-2 fs-5 fw-medium text-uppercase">NextLevel Week e-Sports</p>
+          <div class="d-flex flex-row w-100" style="height: 300px">
+            <div style="height: 200px; width: 200px" class="mt-1 ms-2">
+              <img
+                class="rounded"
+                src="https://github.com/henrique-1/NextLevel_Week_e-Sports-mobile/blob/main/assets/icon.png?raw=true"
+                alt="Ícone do jogo"
+                style="height: 200px" />
+            </div>
+            <div class="d-flex flex-column h-100 w-75 ms-2 ps-1 overflow-auto">
+              <p class="fs-3 fw-medium text-uppercase">
+                <a target="_blank" href="https://github.com/henrique-1/NextLevel_Week_e-Sports-server" class="link-underline link-underline-opacity-0" style="color: black"
+                  >Server</a
+                >
+              </p>
+              <!-- <p class="text-uppercase">
+                Sobre o aplicativo:
+                <span class="text-lowercase" style="font-size: 16px; letter-spacing: 0">Servidor <span class="text-uppercase">HTTP</span></span>
+              </p> -->
+              <div class="d-flex flex-column">
+                <p class="text-uppercase">Linguagens/Frameworks utilizadas:</p>
+                <div class="d-flex flex-row">
+                  <span class="skill">TypeScript</span>
+                  <span class="skill">Express</span>
+                  <span class="skill">Prisma</span>
+                  <span class="skill">MySQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-row w-100" style="height: 300px">
+            <div style="height: 200px; width: 200px" class="mt-1 ms-2">
+              <img
+                class="rounded"
+                src="https://github.com/henrique-1/NextLevel_Week_e-Sports-mobile/blob/main/assets/icon.png?raw=true"
+                alt="Ícone do jogo"
+                style="height: 200px" />
+            </div>
+            <div class="d-flex flex-column h-100 w-75 ms-2 ps-1 overflow-auto">
+              <p class="fs-3 fw-medium text-uppercase">
+                <a target="_blank" href="https://github.com/henrique-1/NextLevel_Week_e-Sports-web/tree/main" class="link-underline link-underline-opacity-0" style="color: black"
+                  >Web</a
+                >
+              </p>
+              <!-- <p class="text-uppercase">
+                Sobre o aplicativo:
+                <span class="text-lowercase" style="font-size: 16px; letter-spacing: 0">Servidor <span class="text-uppercase">HTTP</span></span>
+              </p> -->
+              <div class="d-flex flex-column">
+                <p class="text-uppercase">Linguagens/Frameworks utilizadas:</p>
+                <div class="d-flex flex-row">
+                  <span class="skill">TypeScript</span>
+                  <span class="skill">React.JS</span>
+                  <span class="skill">TailwindCSS</span>
+                  <span class="skill">Vite</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-row w-100" style="height: 300px">
+            <div style="height: 200px; width: 200px" class="mt-1 ms-2">
+              <img
+                class="rounded"
+                src="https://github.com/henrique-1/NextLevel_Week_e-Sports-mobile/blob/main/assets/icon.png?raw=true"
+                alt="Ícone do jogo"
+                style="height: 200px" />
+            </div>
+            <div class="d-flex flex-column h-100 w-75 ms-2 ps-1 overflow-auto">
+              <p class="fs-3 fw-medium text-uppercase">
+                <a target="_blank" href="https://github.com/henrique-1/NextLevel_Week_e-Sports-mobile" class="link-underline link-underline-opacity-0" style="color: black">
+                  Mobile
+                </a>
+              </p>
+              <!-- <p class="text-uppercase">
+                Sobre o aplicativo:
+                <span class="text-lowercase" style="font-size: 16px; letter-spacing: 0">Aplicativo de celular</span>
+              </p> -->
+              <div class="d-flex flex-column">
+                <p class="text-uppercase">Linguagens/Frameworks utilizadas:</p>
+                <div class="d-flex flex-row">
+                  <span class="skill">TypeScript</span>
+                  <span class="skill">React Native</span>
+                  <span class="skill">Expo</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="d-flex flex-row w-100" style="height: 300px">
+          <div style="height: 200px; width: 200px" class="mt-1 ms-2">
+            <img
+              class="rounded"
+              src="https://yt3.ggpht.com/a-/AN66SAwEmAP0WiZxLuzJ_prRn4DduPMIMUiPpzBuZg=s900-mo-c-c0xffffffff-rj-k-no"
+              alt="Ícone da RocketSeat"
+              style="height: 200px" />
+          </div>
+          <div class="d-flex flex-column h-100 w-75 ms-2 ps-1 overflow-auto">
+            <p class="fs-3 fw-medium text-uppercase">
+              <a target="_blank" href="https://github.com/henrique-1/NLW-Together" class="link-underline link-underline-opacity-0" style="color: black">
+                NextLevel Week Together
+              </a>
+            </p>
+            <p class="text-uppercase">
+              Sobre o aplicativo:
+              <span class="text-lowercase" style="font-size: 16px; letter-spacing: 0"
+                >Servidor HTTP para uma aplicação de rede social, contando com cadastro de usuários, tag e elogios</span
+              >
+            </p>
+            <div class="d-flex flex-column">
+              <p class="text-uppercase">Linguagens/Frameworks utilizadas:</p>
+              <div class="d-flex flex-row">
+                <span class="skill">TypeScript</span>
+                <span class="skill">Express</span>
+                <span class="skill">JSON Web Token</span>
+                <span class="skill">TypeORM</span>
+                <span class="skill">SQLite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-row w-100" style="height: 300px">
+          <div style="height: 200px; width: 200px" class="mt-1 ms-2">
+            <img
+              class="rounded"
+              src="https://yt3.ggpht.com/a-/AN66SAwEmAP0WiZxLuzJ_prRn4DduPMIMUiPpzBuZg=s900-mo-c-c0xffffffff-rj-k-no"
+              alt="Ícone da RocketSeat"
+              style="height: 200px" />
+          </div>
+          <div class="d-flex flex-column h-100 w-75 ms-2 ps-1 overflow-auto">
+            <p class="fs-3 fw-medium text-uppercase">
+              <a target="_blank" href="https://github.com/henrique-1/NLW-Together" class="link-underline link-underline-opacity-0" style="color: black">
+                Gerenciador de Grupo Escoteiro
+              </a>
+            </p>
+            <p class="text-uppercase">
+              Sobre o aplicativo:
+              <span class="text-lowercase" style="font-size: 16px; letter-spacing: 0"
+                >Servidor <span class="text-uppercase">HTTP</span> para uma aplicação que tem o objetivo de gerenciar um grupo escoteiro.</span
+              >
+            </p>
+            <div class="d-flex flex-column">
+              <p class="text-uppercase">Linguagens/Frameworks utilizadas:</p>
+              <div class="d-flex flex-row overflow-x-auto">
+                <span class="skill">TypeScript</span>
+                <span class="skill">Fastify</span>
+                <span class="skill">Zod</span>
+                <span class="skill">Prisma</span>
+                <span class="skill">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </content>
+    <footer class="d-flex flex-row justify-content-between align-items-center px-3" style="background: #fafafa; min-height: 50px; height: 75px; color: #b1b1b1; font-size: 12px">
+      <div class="d-flex flex-column justify-content-left w-75 pt-2" style="font-size: 10px; letter-spacing: 0">
+        <p>©<span id="currentYear"></span> Henrique Bissoli Malaman Alonso.</p>
+        <p>©<span id="currentYear"></span> Henrique Bissoli Malaman Alonso Desenvolvimento de Software - CNPJ <span>47.750.099/0001-02</span>.</p>
       </div>
-      <!-- Portfolio -->
-    </div>
-    <div id="footer">
-      <div class="inner">
-        © 2022 Henrique Bissoli Malaman Alonso.
-        <span class="right">
-          <a target="_blank" href="mailto:contato.henrique.bissoli@gmail.com"
-            >Email</a
-          >&nbsp;//&nbsp;
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/henrique-bissoli-142a49211/"
-            >LinkedIn</a
-          >
-        </span>
-      </div>
-    </div>
+      <p class="text-end align-self-end" style="color: #b1b1b1">
+        <a target="_blank" href="mailto:contato.henrique.bissoli@gmail.com" class="text-end" style="color: #b1b1b1">Email</a> &nbsp;//&nbsp;
+        <a target="_blank" href="https://www.linkedin.com/in/henrique-bissoli-142a49211/" class="text-end" style="color: #b1b1b1">LinkedIn</a>
+      </p>
+    </footer>
   </body>
 </html>
