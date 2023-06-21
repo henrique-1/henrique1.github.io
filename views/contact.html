@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portifolio" />
-    <meta name="keywords" content="henrique bissoli" />
     <meta name="author" content="Henrique Bissoli Malaman Alonso" />
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script type="text/javascript" src="../scripts/date.js"></script>
+    <script type="text/javascript" src="../scripts/form.js"></script>
     <!-- PhosphorIcons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- Bootstrap -->
@@ -21,14 +20,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css" />
     <!-- Fonts -->
-    <link href=’https://fonts.googleapis.com/css?family=Montserrat rel=’stylesheet’/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
   </head>
   <body class="d-flex flex-column h-100 w-100" style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.2em">
     <header class="d-flex w-100 px-3 justify-content-between align-items-center shadow-sm" style="top: 0; height: 100px; background-color: #fafafa">
       <div class="d-flex w-75">
         <p class="fs-4 fw-lighter text-uppercase">Henrique Bissoli Malaman Alonso</p>
       </div>
-      <div class="d-flex w-25 justify-content-end">
+      <div class="d-flex min-vw-25 w-50 justify-content-end">
         <ul class="nav nav-underline text-uppercase">
           <li class="nav-item">
             <p class="fs-6">
@@ -50,21 +49,21 @@
     </header>
     <content class="d-flex justify-content-center w-100 h-100 pb-2">
       <article class="d-flex flex-column w-50 pt-3">
-        <p class="fs-4 fw-lighter text-center text-uppercase">Contato</p>
+        <h1 class="fs-1 fw-lighter text-center text-uppercase mb-2 mt-3">Contato</h1>
         <div class="d-flex flex-column w-100">
           <p class="text-uppercase" style="letter-spacing: 0.05em">Entre em contato e faça um orçamento</p>
-          <form id="contact" style="letter-spacing: 0" method="post" action="mailto:contato.henrique.bissoli@gmail.com">
+          <form id="contact" style="letter-spacing: 0">
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="floatingInput" placeholder="Nome completo" />
-              <label for="floatingPassword">Nome completo</label>
+              <input type="text" class="form-control" id="fullname" placeholder="Nome completo" required />
+              <label for="fullname">Nome completo</label>
             </div>
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="email@exemplo.com" />
-              <label for="floatingInput">Email para contato</label>
+              <input type="email" class="form-control" id="email" placeholder="email@exemplo.com" required />
+              <label for="email">Email para contato</label>
             </div>
             <div class="form-floating mb-3">
-              <textarea class="form-control" placeholder="Descreva detalhadamente a aplicação que deseja fazer um orçamento" id="floatingTextareaDisabled"></textarea>
-              <label for="floatingTextareaDisabled">Descreva detalhadamente a aplicação que deseja fazer um orçamento</label>
+              <textarea class="form-control" placeholder="Descreva detalhadamente a aplicação que deseja fazer um orçamento" id="description" required></textarea>
+              <label for="description">Descreva detalhadamente a aplicação que deseja fazer um orçamento</label>
             </div>
             <div>
               <button type="submit" id="sendMail" class="btn btn-primary">Enviar e-mail</button>
@@ -77,7 +76,13 @@
       class="d-flex flex-row justify-content-between align-items-center px-3 fixed-bottom"
       style="background: #fafafa; min-height: 50px; height: 75px; color: #b1b1b1; font-size: 12px">
       <div class="d-flex flex-column justify-content-left w-75 pt-2" style="font-size: 10px; letter-spacing: 0">
-        <p>©<span id="currentYear"></span> Henrique Bissoli Malaman Alonso.</p>
+        <div class="d-flex flex-row">
+          <p>©<span id="currentYear"></span> Henrique Bissoli Malaman Alonso.</p>
+          &nbsp;•&nbsp;
+          <p class="text-uppercase">bv3019683</p>
+          &nbsp;•&nbsp;
+          <p class="">Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - São João da Boa Vista</p>
+        </div>
         <p>©<span id="currentYear"></span> Henrique Bissoli Malaman Alonso Desenvolvimento de Software - CNPJ <span>47.750.099/0001-02</span>.</p>
       </div>
       <p class="text-end align-self-end" style="color: #b1b1b1">
