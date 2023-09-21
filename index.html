@@ -4,237 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Henrique Bissoli Malaman Alonso" />
+    <meta name="description" content="É aqui onde guardo meus projetos e links úteis sobre mim :D" />
+    <title>Henrique Bissoli Malaman Alonso</title>
+
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/date.js"></script>
     <!-- PhosphorIcons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <!-- Bootstrap -->
-    <script type="text/javascript" src="scripts/bootstrap/bootstrap.js"></script>
-    <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"></script>
-    <!-- CSS -->
+    <!-- TailwindCSS -->
     <link rel="stylesheet" href="styles/style.css" />
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <!-- Ripple Effect -->
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
+    <!-- Material Icons Link -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
   </head>
-  <body class="d-flex flex-column h-100 w-100" style="font-family: 'Montserrat', sans-serif; letter-spacing: 0.2em">
-    <header class="d-flex w-100 px-3 justify-content-between align-items-center shadow-sm" style="top: 0; height: 100px; background-color: #fafafa">
-      <div class="d-flex w-75">
-        <p class="fs-4 fw-lighter text-uppercase">Henrique Bissoli Malaman Alonso</p>
-      </div>
-      <div class="d-flex min-vw-25 w-50 justify-content-end">
-        <ul class="nav nav-underline text-uppercase">
-          <li class="nav-item">
-            <p class="fs-6">
-              <a class="nav-link active" aria-current="page" href="index.html">Meus Projetos</a>
-            </p>
+  <body class="flex flex-col w-full h-screen scroll-smooth scrollbar-thin scrollbar-thumb-rounded-full">
+    <header class="flex flex-col desktop:h-20 projetor:h-20 laptop:h-20 tablet:h-20 cellphone:h-14 justify-around items-center border-b-4">
+      <h1>Henrique Bissoli Malaman Alonso</h1>
+      <nav>
+        <ul class="flex flex-row gap-x-4">
+          <li>
+            <a><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn</a>
           </li>
-          <li class="nav-item">
-            <p class="fs-6">
-              <a class="nav-link" href="views/curriculum.html">Currículo</a>
-            </p>
+          <li>
+            <a><i class="fa-brands fa-github"></i>&nbsp;GitHub</a>
           </li>
-          <li class="nav-item">
-            <p class="fs-6">
-              <a class="nav-link" href="views/contact.html">Contato</a>
-            </p>
+          <li>
+            <a><i class="fa-brands fa-twitter"></i>&nbsp;Twitter</a>
+          </li>
+          <li>
+            <a><i class="fa-brands fa-instagram"></i>&nbsp;Instagram</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
-    <content class="d-flex justify-content-center w-100 h-100 pb-2">
-      <article class="d-flex flex-column w-50 mt-3">
-        <h1 class="fs-1 fw-lighter text-center text-uppercase mb-2 mt-3">Projetos</h1>
-        <div class="d-flex flex-row w-100 mt-3" style="height: 300px">
-          <div style="height: 200px; width: 200px" class="mt-1 ms-2">
-            <img
-              class="rounded"
-              src="https://github.com/henrique-1/Palavreando/blob/main/lib/assets/icons/palavreando_logo.png?raw=true"
-              alt="Ícone do jogo"
-              style="height: 200px" />
-          </div>
-          <div class="d-flex flex-column h-100 w-75 ms-2 ps-1 mt-1 overflow-y-auto">
-            <p class="fs-3 fw-medium text-uppercase">
-              <a target="_blank" href="https://github.com/henrique-1/Palavreando/tree/main" class="link-underline link-underline-opacity-0" style="color: black">Palavreando</a>
-            </p>
-            <p class="fw-lighter text-uppercase">
-              Sobre:
-              <span class="text-lowercase" style="font-size: 16px; letter-spacing: 0">
-                Palavreando é um aplicativo lúdico e divertido em que a criança deve acertar qual é a palavra proposta tendo como dica o número de letras e o tema ligado à palavra.
-              </span>
-            </p>
-            <p class="fw-lighter text-uppercase">
-              O projeto:
-              <span class="text-lowercase" style="font-size: 16px; letter-spacing: 0">
-                A alfabetização é mais do que saber ler e escrever. Ela é a porta de entrada para que o indivíduo se torne um ser letrado, atuante e crítico dentro da sociedade,
-                por isso, é muito importante que o processo de aquisição desse conhecimento alcance o maior número possível de pessoas. No contexto infantil, sabe-se do valor dos
-                jogos no desenvolvimento cognitivo e como eles podem ser um grande aliado no aprendizado, incluindo crianças que se encontram no Transtorno do Espectro Autista
-                <span class="text-uppercase">(TEA)</span>, que podem demandar diferentes métodos para se alcançar o mesmo objetivo. O trabalho apresenta o desenvolvimento de um
-                aplicativo de jogo educacional para auxiliar na alfabetização tanto de crianças neurotípicas quanto neuroatípicas, buscando atingir as seguintes habilidades da Base
-                Nacional Curricular Comum.
-              </span>
-            </p>
-            <div class="d-flex flex-column">
-              <p class="text-uppercase">Linguagens/Frameworks utilizadas:</p>
-              <div class="d-flex flex-row overflow-auto">
-                <span class="skill">Flutter</span>
-                <span class="skill">Dart</span>
-                <span class="skill">Git</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div name="RocketSeat Projects" class="d-flex flex-column w-100 h-auto mt-3">
-          <p class="ms-2 fs-4 fw-medium text-uppercase">Projetos da RocketSeat</p>
-          <div name="NextLevel Week E-Sports" class="d-flex flex-column w-100 h-auto mt-3">
-            <p class="ms-4 fs-5 fw-medium text-uppercase">NextLevel Week e-Sports</p>
-            <div class="ms-4">
-              <div class="d-flex flex-row w-100 mt-3" style="height: 300px">
-                <div style="height: 200px; width: 200px" class="mt-1 ms-2">
-                  <img
-                    class="rounded"
-                    src="https://github.com/henrique-1/NextLevel_Week_e-Sports-mobile/blob/main/assets/icon.png?raw=true"
-                    alt="Ícone NextLevel Week"
-                    style="height: 200px" />
-                </div>
-                <div class="d-flex flex-column h-100 w-75 ms-2 ps-1 mt-1 overflow-y-auto">
-                  <p class="fs-3 fw-medium text-uppercase">
-                    <a target="_blank" href="https://github.com/henrique-1/NextLevel_Week_e-Sports-server" class="link-underline link-underline-opacity-0" style="color: black">
-                      Server
-                    </a>
-                  </p>
-                  <div class="d-flex flex-column">
-                    <p class="text-uppercase">Linguagens/Frameworks utilizadas:</p>
-                    <div class="d-flex flex-row overflow-auto">
-                      <span class="skill">TypeScript</span>
-                      <span class="skill">Express</span>
-                      <span class="skill">Prisma</span>
-                      <span class="skill">MySQL</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex flex-row w-100 mt-3" style="height: 300px">
-                <div style="height: 200px; width: 200px" class="mt-1 ms-2">
-                  <img
-                    class="rounded"
-                    src="https://github.com/henrique-1/NextLevel_Week_e-Sports-mobile/blob/main/assets/icon.png?raw=true"
-                    alt="Ícone NextLevel Week"
-                    style="height: 200px" />
-                </div>
-                <div class="d-flex flex-column h-100 w-75 ms-2 ps-1 mt-1 overflow-y-auto">
-                  <p class="fs-3 fw-medium text-uppercase">
-                    <a target="_blank" href="https://github.com/henrique-1/NextLevel_Week_e-Sports-web" class="link-underline link-underline-opacity-0" style="color: black">Web</a>
-                  </p>
-                  <div class="d-flex flex-column">
-                    <p class="text-uppercase">Linguagens/Frameworks utilizadas:</p>
-                    <div class="d-flex flex-row overflow-auto">
-                      <span class="skill">TypeScript</span>
-                      <span class="skill">React.JS</span>
-                      <span class="skill">TailwindCSS</span>
-                      <span class="skill">Vite</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex flex-row w-100 mt-3" style="height: 300px">
-                <div style="height: 200px; width: 200px" class="mt-1 ms-2">
-                  <img
-                    class="rounded"
-                    src="https://github.com/henrique-1/NextLevel_Week_e-Sports-mobile/blob/main/assets/icon.png?raw=true"
-                    alt="Ícone NextLevel Week"
-                    style="height: 200px" />
-                </div>
-                <div class="d-flex flex-column h-100 w-75 ms-2 ps-1 mt-1 overflow-y-auto">
-                  <p class="fs-3 fw-medium text-uppercase">
-                    <a target="_blank" href="https://github.com/henrique-1/NextLevel_Week_e-Sports-mobile" class="link-underline link-underline-opacity-0" style="color: black">
-                      Mobile
-                    </a>
-                  </p>
-                  <div class="d-flex flex-column">
-                    <p class="text-uppercase">Linguagens/Frameworks utilizadas:</p>
-                    <div class="d-flex flex-row overflow-auto">
-                      <span class="skill">TypeScript</span>
-                      <span class="skill">React Native</span>
-                      <span class="skill">Expo</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="d-flex flex-row w-100 ms-2 mt-3" style="height: 300px">
-            <div style="height: 200px; width: 200px" class="mt-1 ms-2">
-              <img
-                class="rounded"
-                src="https://yt3.ggpht.com/a-/AN66SAwEmAP0WiZxLuzJ_prRn4DduPMIMUiPpzBuZg=s900-mo-c-c0xffffffff-rj-k-no"
-                alt="Ícone da RocketSeat"
-                style="height: 200px" />
-            </div>
-            <div class="d-flex flex-column h-100 w-75 ms-2 ps-1 mt-1 overflow-y-auto">
-              <p class="fs-3 fw-medium text-uppercase">
-                <a target="_blank" href="https://github.com/henrique-1/NLW-Together" class="link-underline link-underline-opacity-0" style="color: black">
-                  NextLevel Week Together
-                </a>
-              </p>
-              <div class="d-flex flex-column">
-                <p class="text-uppercase">Linguagens/Frameworks utilizadas:</p>
-                <div class="d-flex flex-row overflow-auto">
-                  <span class="skill">TypeScript</span>
-                  <span class="skill">Express</span>
-                  <span class="skill">JSON Web Token</span>
-                  <span class="skill">TypeORM</span>
-                  <span class="skill">SQLite</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-flex flex-row w-100 mt-3" style="height: 300px">
-          <div style="height: 200px; width: 200px" class="mt-1 ms-2">
-            <div class="rounded" style="width: 200px; height: 200px; background-color: gray"></div>
-          </div>
-          <div class="d-flex flex-column h-100 w-75 ms-2 ps-1 mt-1 overflow-y-auto">
-            <p class="fs-3 fw-medium text-uppercase">
-              <a target="_blank" href="https://github.com/henrique-1/Gerenciador_Grupo-Escoteiro_API" class="link-underline link-underline-opacity-0" style="color: black">
-                Gerenciador de Grupo Escoteiro
-              </a>
-            </p>
-            <div class="d-flex flex-column">
-              <p class="text-uppercase">Linguagens/Frameworks utilizadas:</p>
-              <div class="d-flex flex-row overflow-auto">
-                <span class="skill">TypeScript</span>
-                <span class="skill">Fastify</span>
-                <span class="skill">Zod</span>
-                <span class="skill">Prisma</span>
-                <span class="skill">PostgreSQL</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </content>
-    <footer
-      class="d-flex flex-row justify-content-between align-items-center px-3 fixed-bottom"
-      style="background: #fafafa; min-height: 50px; height: 75px; color: #b1b1b1; font-size: 12px">
-      <div class="d-flex flex-column justify-content-left w-75 pt-2" style="font-size: 10px; letter-spacing: 0">
-        <div class="d-flex flex-row">
-          <p>©<span id="currentYear"></span> Henrique Bissoli Malaman Alonso.</p>
-          &nbsp;•&nbsp;
-          <p class="text-uppercase">bv3019683</p>
-          &nbsp;•&nbsp;
-          <p class="">Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - São João da Boa Vista</p>
-        </div>
-        <p>©<span id="currentYear"></span> Henrique Bissoli Malaman Alonso Desenvolvimento de Software - CNPJ <span>47.750.099/0001-02</span>.</p>
-      </div>
-      <p class="text-end align-self-end" style="color: #b1b1b1">
-        <a target="_blank" href="mailto:contato.henrique.bissoli@gmail.com" class="text-end" style="color: #b1b1b1">Email</a> &nbsp;//&nbsp;
-        <a target="_blank" href="https://www.linkedin.com/in/henrique-bissoli-142a49211/" class="text-end" style="color: #b1b1b1">LinkedIn</a>
-      </p>
+    <article></article>
+    <footer class="flex flex-col desktop:h-14 projetor:h-14 laptop:h-14 tablet:h-14 cellphone:h-20 justify-start items-center border-t-4 pl-2 pr-2 pt-2 pb-2">
+      <nav class="flex flex-row h-full w-full gap-4 items-center justify-center">
+        <a class="underline underline-offset-1 text-resolution-blue-950 text-xs font-normal" href="./views/about.html">Sobre</a>
+        <a class="underline underline-offset-1 text-resolution-blue-950 text-xs font-normal" href="./views/referencias.html">Referências</a>
+        <p class="text-xs font-light">&copy; <span id="currentYear"></span>&nbsp;Henrique Bissoli Malaman Alonso</p>
+      </nav>
     </footer>
   </body>
 </html>
